@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Amirhossein Rafighi – Gameplay Animator</title>
+<meta name="description" content="Gameplay animator with 5+ years of experience in hand-keyed animation, motion capture cleanup and cutscene integration. Demo reels and resume.">
+<meta property="og:title" content="Amirhossein Rafighi – Gameplay Animator">
+<meta property="og:description" content="Demo reels and resume of a gameplay animator.">
+<meta property="og:image" content="reels/best_of.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#1b1d20; --panel:#25282c; --line:#3a3e44; --text:#e8e6e1; --mute:#a2a5ab;
+  --amber:#e0b36a; --cyan:#5cc8d6;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:400 1.0625rem/1.65 "Instrument Sans",system-ui,sans-serif}
+a{color:var(--cyan)}
+:focus-visible{outline:2px solid var(--amber);outline-offset:3px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:"Bricolage Grotesque",sans-serif;line-height:1.05;margin:0}
+header.top{display:flex;justify-content:space-between;align-items:center;padding:20px 0}
+header.top b{font:700 1.1rem "Bricolage Grotesque"}
+nav a{color:var(--mute);text-decoration:none;margin-left:22px;font-weight:500}
+nav a:hover{color:var(--text)}
+.hero{padding:28px 0 64px}
+.hero h1{font-size:clamp(2.8rem,8vw,6.2rem);font-weight:800;letter-spacing:-.03em;max-width:12ch}
+.hero p.lead{max-width:56ch;color:var(--mute);font-size:1.2rem;margin:18px 0 36px}
+.editor{display:grid;grid-template-columns:minmax(0,1.9fr) minmax(260px,1fr);gap:0;background:var(--panel);border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.editor video{display:block;width:100%;aspect-ratio:16/9;background:#000}
+.tracks{display:flex;flex-direction:column;border-left:1px solid var(--line)}
+.track{all:unset;cursor:pointer;display:block;padding:16px 18px;border-bottom:1px solid var(--line);position:relative;flex:1}
+.track:last-child{border-bottom:0}
+.track:hover{background:#2c3035}
+.track[aria-selected="true"]{background:#30343a}
+.track strong{display:block;font:700 1.05rem "Bricolage Grotesque"}
+.track span{color:var(--mute);font-size:.9rem}
+.track::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:transparent}
+.track[aria-selected="true"]::before{background:var(--amber)}
+.bar{position:absolute;left:18px;right:18px;bottom:9px;height:3px;background:var(--line)}
+.bar i{display:block;height:100%;width:0;background:var(--amber)}
+section{padding:72px 0;border-top:1px solid var(--line)}
+section h2{font-size:clamp(1.9rem,4vw,2.8rem);margin-bottom:28px;letter-spacing:-.02em}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.about p{margin:0 0 1em;max-width:62ch}
+.facts{margin:0;padding:0;list-style:none}
+.facts li{padding:14px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:16px}
+.facts li span:first-child{color:var(--mute)}
+.facts li span:last-child{text-align:right}
+.tl{position:relative;margin:0;padding:0;list-style:none}
+.tl::before{content:"";position:absolute;left:7px;top:8px;bottom:8px;width:1px;background:var(--line)}
+.tl>li{position:relative;padding:0 0 44px 44px}
+.tl>li::before{content:"";position:absolute;left:1px;top:7px;width:13px;height:13px;background:var(--amber);transform:rotate(45deg)}
+.tl>li.now::before{background:var(--cyan)}
+.tl h3{font-size:1.5rem}
+.tl .meta{color:var(--mute);margin:4px 0 12px}
+.tl p{margin:0 0 .8em;max-width:70ch}
+.tl ul{margin:0;padding-left:1.1em;max-width:70ch}
+.tl li li{margin-bottom:.5em}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:40px}
+.cols h3{font-size:1.2rem;margin-bottom:12px;color:var(--amber)}
+.cols ul{margin:0;padding:0;list-style:none}
+.cols li{padding:7px 0;border-bottom:1px solid var(--line)}
+.contact a.big{font:700 clamp(1.4rem,4vw,2.6rem) "Bricolage Grotesque";color:var(--text);text-decoration-color:var(--amber);text-underline-offset:8px}
+footer{padding:36px 0 60px;color:var(--mute);font-size:.9rem;border-top:1px solid var(--line)}
+@media (max-width:820px){
+  .editor{grid-template-columns:1fr}
+  .tracks{border-left:0;border-top:1px solid var(--line)}
+  .track{padding:18px 18px 22px}
+  .about{grid-template-columns:1fr;gap:24px}
+  nav a{margin-left:14px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <b>Amirhossein Rafighi</b>
+    <nav aria-label="Sections"><a href="#reels">Reels</a><a href="#about">About</a><a href="#experience">Experience</a><a href="#contact">Contact</a></nav>
+  </header>
+
+  <main>
+  <div class="hero" id="reels">
+    <h1>Gameplay animator</h1>
+    <p class="lead">I animate characters and creatures for games: hand-keyed locomotion and combat, motion capture cleanup, and cutscenes that fit the gameplay around them.</p>
+
+    <div class="editor">
+      <video id="player" controls playsinline preload="metadata" poster="reels/best_of.jpg" src="reels/best_of.mp4"></video>
+      <div class="tracks" role="tablist" aria-label="Demo reels">
+        <button class="track" role="tab" aria-selected="true" data-src="reels/best_of.mp4" data-poster="reels/best_of.jpg"><strong>Best of 2026</strong><span>My strongest shots from every reel</span><div class="bar"><i></i></div></button>
+        <button class="track" role="tab" aria-selected="false" data-src="reels/gameplay.mp4" data-poster="reels/gameplay.jpg"><strong>Gameplay reel</strong><span>Mocap cleanup and hand keyframe</span><div class="bar"><i></i></div></button>
+        <button class="track" role="tab" aria-selected="false" data-src="reels/cinematic.mp4" data-poster="reels/cinematic.jpg"><strong>Cinematic reel</strong><span>Mocap and MetaHuman performances</span><div class="bar"><i></i></div></button>
+        <button class="track" role="tab" aria-selected="false" data-src="reels/personal.mp4" data-poster="reels/personal.jpg"><strong>Personal reel</strong><span>Creature and character studies</span><div class="bar"><i></i></div></button>
+      </div>
+    </div>
+  </div>
+
+  <section id="about">
+    <h2>About</h2>
+    <div class="about">
+      <div>
+        <p>I’m a gameplay animator with 5+ years of experience bringing characters and creatures to life in immersive game worlds. My work blends creative vision with technical skill, from refining motion capture data to integrating animations into gameplay.</p>
+        <p>I’m driven by storytelling through motion, and I work comfortably in the fast-paced, ever-evolving video game industry. I move between technical precision and creative storytelling, whether it’s a tense stealth sequence or a heartfelt character moment, and I keep exploring new tools and workflows for interactive animation.</p>
+      </div>
+      <ul class="facts">
+        <li><span>Current role</span><span>Gameplay Animator, Polydin Game Studio</span></li>
+        <li><span>Location</span><span>Tehran Province, Iran</span></li>
+        <li><span>Main tool</span><span>Autodesk Maya</span></li>
+        <li><span>Languages</span><span>Persian (native), English</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <ol class="tl">
+      <li class="now">
+        <h3>Gameplay Animator, Polydin Studio</h3>
+        <div class="meta">June 2024 – present</div>
+        <p>I specialize in gameplay and cinematic sequences, creating expressive animation that raises the player experience and the narrative impact.</p>
+        <ul>
+          <li><b>Hand-keyed animation.</b> Fluid, dynamic animation for humanoid and creature rigs, focused on locomotion, combat and emotional nuance.</li>
+          <li><b>Cutscene integration.</b> Designing and implementing story-driven animation that matches the cinematic direction and the gameplay pacing.</li>
+          <li><b>Motion capture workflow.</b> Experienced with Rokoko and Vicon, from capture setup to data cleanup and retargeting.</li>
+          <li><b>Mocap cleanup and polish.</b> Refining raw motion data for smooth transitions, believable movement and a consistent style across animation assets.</li>
+        </ul>
+      </li>
+      <li class="now">
+        <h3>Rattle Head Games</h3>
+        <div class="meta">Self-employed · April 2025 – present</div>
+      </li>
+      <li>
+        <h3>Gameplay Animator, Permanentway Entertainment</h3>
+        <div class="meta">Istanbul, Türkiye · January 2023 – May 2024</div>
+        <ul>
+          <li>Created third-person player gameplay animation.</li>
+          <li>Created gameplay animation for enemies, creatures and NPCs.</li>
+          <li>Implemented motion capture data.</li>
+        </ul>
+      </li>
+      <li>
+        <h3>Junior Game Animator, Dead Mage</h3>
+        <div class="meta">September 2020 – January 2023</div>
+        <ul>
+          <li>Rigged and animated 2D sprites in Unity.</li>
+          <li>Handled content design for all 2D sprites in Unity.</li>
+        </ul>
+      </li>
+    </ol>
+  </section>
+
+  <section id="skills">
+    <h2>Skills and education</h2>
+    <div class="cols">
+      <div><h3>Animation</h3><ul><li>Gameplay animation</li><li>Character animation</li><li>Creature animation</li><li>Cutscene animation</li><li>Locomotion and combat</li></ul></div>
+      <div><h3>Pipeline and tools</h3><ul><li>Autodesk Maya</li><li>Rokoko and Vicon mocap</li><li>Mocap cleanup and retargeting</li><li>Unity (2D rigging and sprites)</li></ul></div>
+      <div><h3>Education</h3><ul><li>Associate of Arts in Animation</li><li>Soroush University of Applied Science, Unit 17</li><li>February 2021 – February 2024</li></ul></div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p><a class="big" href="mailto:amirhosein.rafighii@gmail.com">amirhosein.rafighii@gmail.com</a></p>
+    <p><a href="https://www.linkedin.com/in/amirhosseinrafighi-6074a9189">LinkedIn profile</a></p>
+  </section>
+  </main>
+  <footer>© 2026 Amirhossein Rafighi</footer>
+</div>
+
+<script>
+(function(){
+  var v=document.getElementById('player'), tabs=[].slice.call(document.querySelectorAll('.track'));
+  tabs.forEach(function(t){
+    t.addEventListener('click',function(){
+      tabs.forEach(function(x){x.setAttribute('aria-selected',x===t);x.querySelector('i').style.width='0'});
+      v.poster=t.dataset.poster; v.src=t.dataset.src; v.play().catch(function(){});
+    });
+  });
+  v.addEventListener('timeupdate',function(){
+    var a=document.querySelector('.track[aria-selected="true"] i');
+    if(a&&v.duration) a.style.width=(v.currentTime/v.duration*100)+'%';
+  });
+})();
+</script>
+</body>
+</html>
